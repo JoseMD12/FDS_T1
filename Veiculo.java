@@ -41,7 +41,7 @@ public abstract class Veiculo {
 
     @Override
     public String toString(){
-        return "Veiculo [placa = " + placa + ", modelo = " + modelo +
+        return "[placa = " + placa + ", modelo = " + modelo +
          ", marca = " + marca + ", ano = " + ano + ", valor = R$" + valor;
     }
 }
