@@ -33,7 +33,7 @@ public class App {
             System.out.println("\n" + v);
         }
 
-        String tipo = "PASSEIO";
+        String tipo = "VeiculoPasseio";
         LinkedList<Veiculo> listaTipo = cv.consultaPorTipo(tipo);
         System.out.println("\nConsulta pelo tipo: " + tipo);
         for(Veiculo v: listaTipo){
