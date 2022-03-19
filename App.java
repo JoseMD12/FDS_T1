@@ -1,5 +1,3 @@
-import java.util.LinkedList;
-
 public class App {
     public static void main(String [] args){
         CatalogoVeiculos cv = new CatalogoVeiculos();
@@ -10,34 +8,28 @@ public class App {
         VeiculoPassageiros vPassageiros1 = new VeiculoPassageiros("JAM4H20", "Onibus", "Marcopolo", 2015, 220000, 160);
         VeiculoPassageiros vPassageiros2 = new VeiculoPassageiros("IWA8452", "Onibus", "Marcopolo", 2016, 270000, 180);
 
-        cv.add(vPassageiros1);
-        cv.add(vPassageiros2);
-        cv.add(vPasseio1);
-        cv.add(vPasseio2);
+        cv.acrescentaVeiculo(vPassageiros1);
+        cv.acrescentaVeiculo(vPassageiros2);
+        cv.acrescentaVeiculo(vPasseio1);
+        cv.acrescentaVeiculo(vPasseio2);
 
         String placa = "JAR8C62";
         System.out.println("Consulta pela placa: " + placa);
-        cv.consultaPorPlaca(placa);
+        System.out.println(cv.ConsultaPorPlaca(placa));
 
         String marca = "Marcopolo";
-        LinkedList<Veiculo> listaMarca = cv.consultaPorMarca(marca);
         System.out.println("\nConsulta pela marca: " + marca);
-        for(Veiculo v: listaMarca){
-            System.out.println("\n" + v);
-        }
+        System.out.println(cv.ConsultaPorMarca(marca));
 
         int ano = 2019;
-        LinkedList<Veiculo> listaAno = cv.consultaPorAno(ano);
         System.out.println("\nConsulta pelo ano: " + ano);
-        for(Veiculo v: listaAno){
-            System.out.println("\n" + v);
-        }
+        System.out.println(cv.ConsultaporAno(ano));
 
-        String tipo = "VeiculoPasseio";
-        LinkedList<Veiculo> listaTipo = cv.consultaPorTipo(tipo);
-        System.out.println("\nConsulta pelo tipo: " + tipo);
-        for(Veiculo v: listaTipo){
-            System.out.println("\n" + v);
-        }
+        // String tipo = "VeiculoPasseio";
+        // LinkedList<Veiculo> listaTipo = cv.ConsultaPorTipo(tipo);
+        // System.out.println("\nConsulta pelo tipo: " + tipo);
+        // for(Veiculo v: listaTipo){
+        //     System.out.println("\n" + v);
+        // }
     }
 }

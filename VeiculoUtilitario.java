@@ -18,6 +18,6 @@ public class VeiculoUtilitario extends Veiculo{
 
     @Override
     public String toString(){
-        return "Veiculo Utilitario" + super.toString() + ", capacidade de carga = " + capCargaTon + " ton, qntd eixos = " + nroEixos + "]";
+        return "Veiculo Utilitario" + super.toString() + ", Capacidade de carga = " + capCargaTon + " ton, qntd eixos = " + nroEixos + "]";
     }
 }

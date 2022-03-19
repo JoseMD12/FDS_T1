@@ -12,6 +12,6 @@ public class VeiculoPassageiros extends Veiculo{
 
     @Override
     public String toString(){
-        return "Veiculo Passageiros" + super.toString() + ", número de passageiros = " + nroPassageiros + "]";
+        return "Veiculo Passageiros" + super.toString() + ", Número de passageiros = " + nroPassageiros + "]";
     }
 }

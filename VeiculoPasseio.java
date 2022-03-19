@@ -15,6 +15,6 @@ public class VeiculoPasseio extends Veiculo{
 
     @Override
     public String toString(){
-        return "Veiculo de Passeio" + super.toString() + ", consumo Km/L = " + consumoKmLt + "]";
+        return "Veiculo de Passeio" + super.toString() + ", Consumo Km/L = " + consumoKmLt + "]";
     }
 }
