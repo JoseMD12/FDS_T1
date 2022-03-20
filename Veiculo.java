@@ -4,6 +4,7 @@ public abstract class Veiculo {
     String marca = "";
     int ano = 0;
     double valor = 0;
+    String tipo;
 
     public Veiculo(String placa, String modelo, String marca, int ano, double valor){
         this.placa = placa;
@@ -11,6 +12,10 @@ public abstract class Veiculo {
         this.marca = marca;
         this.ano = ano;
         this.valor = valor;
+    }
+
+    public String getTipo() {
+        return tipo;
     }
 
     public String getPlaca() {

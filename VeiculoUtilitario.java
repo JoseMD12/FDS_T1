@@ -6,6 +6,7 @@ public class VeiculoUtilitario extends Veiculo{
         super(placa,modelo,marca,ano,valor);
         this.capCargaTon = capCargaTon;
         this.nroEixos = nroEixos;
+        tipo = "VeiculoUtilitario";
     }
 
     public int getCapCargaTon() {

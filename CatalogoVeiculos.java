@@ -42,9 +42,15 @@ public class CatalogoVeiculos {
         return null;
     }
 
-    // public <List>ArrayList<Veiculo> ConsultaPorTipo (String tipo){
-    //     //lógica Pedro
-    //     }
-    // }
+    public <List>ArrayList<Veiculo> ConsultaPorTipo (String tipo){
+        ArrayList<Veiculo> va = new ArrayList<>();
+        for (Veiculo v : cv){
+            if (tipo == v.getTipo()){
+                va.add(v);
+            }
+        }
+        return va;
+    
+    }
 
 }

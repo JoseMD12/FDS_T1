@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class App {
     public static void main(String [] args){
         CatalogoVeiculos cv = new CatalogoVeiculos();
@@ -25,11 +27,11 @@ public class App {
         System.out.println("\nConsulta pelo ano: " + ano);
         System.out.println(cv.ConsultaporAno(ano));
 
-        // String tipo = "VeiculoPasseio";
-        // LinkedList<Veiculo> listaTipo = cv.ConsultaPorTipo(tipo);
-        // System.out.println("\nConsulta pelo tipo: " + tipo);
-        // for(Veiculo v: listaTipo){
-        //     System.out.println("\n" + v);
-        // }
+        String tipo = "VeiculoPasseio";
+        ArrayList<Veiculo> listaTipo = cv.ConsultaPorTipo(tipo);
+        System.out.println("\nConsulta pelo tipo: " + tipo);
+        for(Veiculo v: listaTipo){
+             System.out.println("\n" + v);
+        }
     }
 }

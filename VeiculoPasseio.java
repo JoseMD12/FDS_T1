@@ -4,6 +4,7 @@ public class VeiculoPasseio extends Veiculo{
     public VeiculoPasseio(String placa, String modelo, String marca, int ano, double valor, double consumoKmLt){
         super(placa,modelo,marca,ano,valor);
         this.consumoKmLt = consumoKmLt;
+        tipo = "VeiculoPasseio";
     }
 
     public double getConsumoKmLt() {
