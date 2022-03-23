@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class App {
     public static void main(String [] args){
         CatalogoVeiculos cv = new CatalogoVeiculos();
@@ -17,21 +15,18 @@ public class App {
 
         String placa = "JAR8C62";
         System.out.println("Consulta pela placa: " + placa);
-        System.out.println(cv.ConsultaPorPlaca(placa));
+        System.out.println(cv.ConsultaPorPlaca(placa) + "\n");
 
         String marca = "Marcopolo";
         System.out.println("\nConsulta pela marca: " + marca);
-        System.out.println(cv.ConsultaPorMarca(marca));
+        System.out.println(cv.ConsultaPorMarca(marca) + "\n");
 
         int ano = 2019;
         System.out.println("\nConsulta pelo ano: " + ano);
-        System.out.println(cv.ConsultaporAno(ano));
+        System.out.println(cv.ConsultaporAno(ano) + "\n");
 
         String tipo = "VeiculoPasseio";
-        ArrayList<Veiculo> listaTipo = cv.ConsultaPorTipo(tipo);
         System.out.println("\nConsulta pelo tipo: " + tipo);
-        for(Veiculo v: listaTipo){
-             System.out.println("\n" + v);
-        }
+        System.out.println(cv.ConsultaPorTipo(tipo) + "\n");
     }
 }

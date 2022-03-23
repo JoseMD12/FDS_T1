@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 public class CatalogoVeiculos {
 
-    LinkedList<Veiculo> cv = new LinkedList<>();
+    ArrayList<Veiculo> cv = new ArrayList<>();
 
     public void acrescentaVeiculo (Veiculo a){
         cv.add(a);
@@ -50,7 +49,6 @@ public class CatalogoVeiculos {
             }
         }
         return va;
-    
     }
 
 }
